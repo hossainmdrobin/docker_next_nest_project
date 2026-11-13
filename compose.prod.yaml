@@ -1,0 +1,13 @@
+
+services:
+  frontend:
+    image: hossainmdrobin967/next-nest-frontend:1.0.0
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    image: hossainmdrobin967/next-nest-backend:1.0.0
+    ports:
+      - "4000:4000"
